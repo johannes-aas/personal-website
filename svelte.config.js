@@ -8,7 +8,7 @@ const config = {
 	preprocess: [mdsvex()],
 
 	kit: {
-		adapter: adapter(), // use Vercel adapter instead of auto
+		adapter: adapter() // use Vercel adapter instead of auto
 	}
 };
 
