@@ -42,7 +42,7 @@
 				</a>
 
 				<a
-					href="https://www.linkedin.com/in/johannes-hansen-aas-1442a8233"
+					href="https://www.linkedin.com/in/johannes-hansen-aas/"
 					target="_blank"
 					rel="noopener noreferrer"
 					class="group flex items-center space-x-3 rounded-lg border border-gray-700 bg-gray-800/50 px-6 py-3 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-gray-600 hover:bg-gray-700/50"
