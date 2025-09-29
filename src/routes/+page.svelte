@@ -3,22 +3,24 @@
 	<meta name="description" content="Personal website of Johannes Aas - A work in progress" />
 </svelte:head>
 
-<main
-	class="flex min-h-screen items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-gray-900 p-6"
->
+<section class="flex min-h-screen items-center justify-center p-">
 	<div class="w-full max-w-2xl text-center">
 		<div class="translate-y-0 opacity-100 transition-all duration-1000">
+			<div class="w-80 h-80 mb-8 mx-auto">
+				<svg class="block w-full h-full" xmlns="http://www.w3.org/2000/svg" stroke="white" stroke-width="1" viewBox="0 0 200 200" fill="none">
+					<path d="M199.5 199.5H147.375V187H102.918L90.418 199.5H13.707L199.5 13.707V199.5Z"/>
+					<path d="M132.125 0.5V10.25H145.875V0.5H188.809L146.518 43.6211H130.772V58.1035L88.5 102.744V0.5H132.125Z"/>
+					<path d="M71.5 0.5V118.152L0.5 188.797V94.5H15.5V0.5H71.5Z"/>
+				</svg>
+			</div>
 			<div class="mb-12">
-				<h1 class="mb-4 text-5xl font-bold tracking-tight text-white md:text-6xl">Johannes Aas</h1>
-				<div
-					class="mx-auto h-1 w-20 rounded-full bg-gradient-to-r from-blue-400 to-slate-400"
-				></div>
+				<h1 class="mb-4 text-5xl font-bold tracking-tight text-white md:text-6xl">Johannes Hansen Aas</h1>
 			</div>
 
 			<div class="mb-12">
 				<h2 class="mb-6 text-2xl font-light text-gray-300 md:text-3xl">👋 Hi there!</h2>
 				<p class="mx-auto max-w-md text-lg leading-relaxed text-gray-400">
-					Nice of you to come by. There's not much to see here, but I'm working on it
+					Nice of you to stop by. There's not much to see here yet, but I'm working on it
 				</p>
 			</div>
 
@@ -59,10 +61,6 @@
 					<span class="text-gray-300 transition-colors group-hover:text-white">LinkedIn</span>
 				</a>
 			</div>
-
-			<footer class="mt-16 pt-8">
-				<p class="text-sm text-gray-500">Built with SvelteKit ❤️</p>
-			</footer>
 		</div>
 	</div>
-</main>
+</section>
