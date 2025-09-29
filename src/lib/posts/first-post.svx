@@ -1,0 +1,9 @@
+---
+title: First post
+date: 2025-09-28
+cover: '/images/blog/first-post.png'
+---
+
+# New blog, who this??
+
+This is the first ever blog post of johannesaas.dev. If you are reading this I guess the setup works. yay!
