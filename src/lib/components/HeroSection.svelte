@@ -85,7 +85,7 @@
         </g>
       {/each}
     </svg>
-    <h1 class="absolute inset-0 pointer-events-none m-4 md:m-10 font-bold text-2xl sm:text-4xl md:text-5xl">
+    <h1 class="absolute inset-0 pointer-events-none m-4 md:m-10 font-bold text-4xl md:text-5xl">
       <span class="absolute top-[14%] left-2 md:-left-[8%]">
         Johannes
       </span>

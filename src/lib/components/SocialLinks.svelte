@@ -1,4 +1,4 @@
-<div class="flex justify-center space-x-6">
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
   <a
     href="https://github.com/johannes-aas"
     target="_blank"
