@@ -1,20 +1,23 @@
 <script>
-  import { posts } from '$lib/posts/index.js';
+	import { posts } from '$lib/posts/index.js'
 </script>
 
-<section class="max-w-6xl mx-auto py-16 px-4">
-  <h1 class="text-4xl font-bold mb-6 text-slate-100">Blog</h1>
-  <div class="grid md:grid-cols-2 gap-8">
-    {#each posts as post}
-      <a href={`/blog/${post.slug}`} class="block bg-slate-800 rounded-lg overflow-hidden ring-1 ring-slate-700 hover:ring-slate-600 transition-colors">
-        {#if post.meta.cover}
-          <img src={post.meta.cover} alt={post.meta.title} class="w-full h-48 object-cover" />
-        {/if}
-        <div class="p-4">
-          <h2 class="text-2xl font-semibold mb-2 text-slate-100">{post.meta.title}</h2>
-          <p class="text-slate-400 text-sm">{post.meta.date}</p>
-        </div>
-      </a>
-    {/each}
-  </div>
+<section class="mx-auto max-w-6xl px-4 py-16">
+	<h1 class="mb-6 text-4xl font-bold text-slate-100">Blog</h1>
+	<div class="grid gap-8 md:grid-cols-2">
+		{#each posts as post}
+			<a
+				href={`/blog/${post.slug}`}
+				class="block overflow-hidden rounded-lg bg-slate-800 ring-1 ring-slate-700 transition-colors hover:ring-slate-600"
+			>
+				{#if post.meta.cover}
+					<img src={post.meta.cover} alt={post.meta.title} class="h-48 w-full object-cover" />
+				{/if}
+				<div class="p-4">
+					<h2 class="mb-2 text-2xl font-semibold text-slate-100">{post.meta.title}</h2>
+					<p class="text-sm text-slate-400">{post.meta.date}</p>
+				</div>
+			</a>
+		{/each}
+	</div>
 </section>
