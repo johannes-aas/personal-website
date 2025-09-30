@@ -3,5 +3,6 @@
 @plugin '@tailwindcss/typography';
 
 body {
-  color: white;
+	color: white;
+	background-color: #111827;
 }
