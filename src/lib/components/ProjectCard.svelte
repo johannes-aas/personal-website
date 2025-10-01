@@ -6,14 +6,14 @@
 	export let githubUrl = ''
 </script>
 
-<div class="overflow-hidden rounded-lg bg-slate-800 shadow-md ring-1 ring-slate-700">
+<div class="overflow-hidden rounded-lg bg-[var(--surface-bg)] shadow-md ring-1 ring-[var(--border)]">
 	<div class="p-6">
-		<h3 class="mb-2 text-xl font-semibold text-slate-100">{title}</h3>
-		<p class="mb-4 text-slate-300">{description}</p>
+		<h3 class="mb-2 text-xl font-semibold text-[var(--surface-fg)]">{title}</h3>
+		<p class="mb-4 text-[var(--muted)]">{description}</p>
 
 		<div class="mb-4 flex flex-wrap gap-2">
 			{#each technologies as tech}
-				<span class="rounded border border-slate-600 bg-slate-700 px-2 py-1 text-sm text-slate-200">
+				<span class="rounded border border-[var(--border)] bg-[var(--base-bg)] px-2 py-1 text-sm text-[var(--base-fg)]">
 					{tech}
 				</span>
 			{/each}
@@ -21,12 +21,12 @@
 
 		<div class="flex space-x-4">
 			{#if liveUrl}
-				<a href={liveUrl} target="_blank" class="font-medium text-sky-300 hover:text-sky-200">
-					Live Demo →
+				<a href={liveUrl} target="_blank" class="font-medium text-[var(--surface-fg)] hover:text-[var(--base-fg)]">
+					Visit →
 				</a>
 			{/if}
 			{#if githubUrl}
-				<a href={githubUrl} target="_blank" class="font-medium text-slate-300 hover:text-slate-200">
+				<a href={githubUrl} target="_blank" class="font-medium text-[var(--muted)] hover:text-[var(--base-fg)]">
 					GitHub →
 				</a>
 			{/if}

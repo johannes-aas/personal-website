@@ -1,5 +1,6 @@
 <script>
 	import Logo from './Logo.svelte'
+	import ThemeSwitcher from './ThemeSwitcher.svelte'
 </script>
 
 <header>
@@ -10,11 +11,14 @@
 					<Logo />
 				</a>
 			</div>
-			<div class="flex items-center space-x-8">
-				<a href="/about" class="text-gray-400 transition-colors hover:text-gray-50">About</a>
-				<a href="/projects" class="text-gray-400 transition-colors hover:text-gray-50">Projects</a>
-				<a href="/blog" class="text-gray-400 transition-colors hover:text-gray-50">Blog</a>
-			</div>
+      <div class="flex gap-6">
+        <div class="flex items-center space-x-8">
+          <a href="/about" class="text-[var(--muted)] hover:text-[var(--base-fg)] transition-colors">About</a>
+          <a href="/projects" class="text-[var(--muted)] hover:text-[var(--base-fg)] transition-colors">Projects</a>
+          <a href="/blog" class="text-[var(--muted)] hover:text-[var(--base-fg)] transition-colors">Blog</a>
+        </div>
+        <ThemeSwitcher/>
+      </div>
 		</div>
 	</nav>
 </header>

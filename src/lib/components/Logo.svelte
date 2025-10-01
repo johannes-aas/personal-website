@@ -1,7 +1,6 @@
 <svg
-	class="h-full w-full"
+	class="h-full w-full fill-[var(--base-fg)]"
 	xmlns="http://www.w3.org/2000/svg"
-	fill="white"
 	stroke-width="1"
 	viewBox="0 0 200 200"
 >
