@@ -16,6 +16,23 @@
 			githubUrl: 'https://github.com/johannes-aas/johannesaas.dev'
 		}
 	]
+
+	const projectContrib = [
+		{
+			title: 'Onlineweb',
+			description: "Website of NTNU's informatics student association",
+			technologies: ['Nextjs', 'React', 'Tailwind CSS', 'TypeScript'],
+			liveUrl: 'https://online.ntnu.no/',
+			githubUrl: 'https://github.com/johannes-aas/react-calendar'
+		},
+		{
+			title: 'Login.no',
+			description: "Website of student association for IT at  NTNU in Gjøvik",
+			technologies: ['Nextjs', 'React', 'Tailwind CSS', 'TypeScript'],
+			liveUrl: 'https://login.no',
+			githubUrl: 'https://github.com/Login-Linjeforening-for-IT/beehive'
+		}
+	]
 </script>
 
 <div class="mx-auto max-w-6xl px-4 py-16">
@@ -23,6 +40,14 @@
 
 	<div class="grid gap-8 md:grid-cols-2">
 		{#each projects as project}
+			<ProjectCard {...project} />
+		{/each}
+	</div>
+
+	<h1 class="mt-10 mb-8 text-4xl font-bold">Things I worked on</h1>
+
+	<div class="grid gap-8 md:grid-cols-2">
+		{#each projectContrib as project}
 			<ProjectCard {...project} />
 		{/each}
 	</div>
