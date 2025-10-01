@@ -66,14 +66,14 @@
 <section class="w-full flex flex-col items-center portrait:items-start">
   <div class="relative mx-auto pt-8 sm:pt-0">
     <svg
-      class="w-auto h-auto p-4 md:p-10 overflow-visible portrait:w-[clamp(200px,calc(100svw),600px)] portrait:h-auto landscape:w-auto landscape:h-[clamp(200px,calc(100svh-5rem),700px)]"
+      class="w-auto h-auto p-4 md:p-10 overflow-visible portrait:w-[clamp(300px,calc(100svw),600px)] portrait:h-auto landscape:w-auto landscape:h-[clamp(400px,calc(100svh-5rem),700px)]"
       viewBox="0 0 200 200"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       {#each Array(8) as _, i (i)}
         <g
-          class="stroke-[#4d87b4]"
+          class="stroke-[var(--accent)]"
           stroke-width={0.7}
           opacity={1 - i / 8}
           transform={`translate(${ux * i * 0.8 * distanceFraction}, ${uy * i * 0.8 * distanceFraction}) scale(${1 - i * 0.02})`}
@@ -85,14 +85,14 @@
         </g>
       {/each}
     </svg>
-    <h1 class="absolute inset-0 pointer-events-none m-4 md:m-10 font-bold text-4xl md:text-5xl">
-      <span class="absolute top-[14%] left-2 md:-left-[8%]">
+    <h1 class="absolute inset-0 pointer-events-none m-4 md:m-10 font-bold text-5xl md:text-7xl">
+      <span class="absolute top-[14%] left-0 md:-left-[8%] lg:-left-[18%]">
         Johannes
       </span>
-      <span class="absolute top-[36%] left-[38%]">
+      <span class="absolute top-[36%] left-[40%]">
         Hansen
       </span>
-      <span class="absolute top-[54%] right-[8%]">
+      <span class="absolute top-[56%] right-0 md:-right-[6%] lg:-right-[16%]">
         Aas
       </span>
     </h1>

@@ -1,5 +1,5 @@
 <script>
-	import '../app.css'
+	import '../globals.css'
 	import favicon from '$lib/assets/favicon.svg'
 	import { dev } from '$app/environment'
 	import { injectAnalytics } from '@vercel/analytics/sveltekit'
@@ -15,7 +15,7 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<div class="flex min-h-screen flex-col bg-radial from-slate-600 to-gray-900">
+<div class="flex min-h-screen flex-col bg-[var(--base-bg)]">
 	<Header />
 	<main class="flex-grow">
 		{@render children?.()}
